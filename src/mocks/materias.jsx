@@ -1,0 +1,44 @@
+const materias = [
+  {
+    id: 1,
+    name: "HTML 5",
+    profesor: "Adriel Monanari",
+    dia: "11/06/2025",
+    hora: "17:00 hs",
+    descripcion:
+      "HTML ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo.",
+    image: "https://img.icons8.com/color/200/html-5.png",
+  },
+  {
+    id: 2,
+    name: "CSS 3",
+    profesor: "Marcela Moritán",
+    dia: "12/06/2025",
+    hora: "18:00 hs",
+    descripcion:
+      "CSS 3 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo.",
+    image: "https://img.icons8.com/fluent/512/css3.png",
+  },
+  {
+    id: 3,
+    name: "Javascript",
+    profesor: "Pedro Murua",
+    dia: "13/06/2025",
+    hora: "19:00 hs",
+    descripcion:
+      "Javascript ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo.",
+    image: "https://img.icons8.com/color/512/javascript--v2.png",
+  },
+  {
+    id: 4,
+    name: "NodeJs",
+    profesor: "Marcos Murillo",
+    dia: "14/06/2025",
+    hora: "20:00 hs",
+    descripcion:
+      "NodeJs ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo.",
+    image: "https://img.icons8.com/fluent/512/node-js.png",
+  },
+];
+
+export default materias;
