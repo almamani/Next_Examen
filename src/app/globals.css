@@ -41,3 +41,16 @@ h2 {
   font-weight: 500;
   text-align: center;
 }
+
+.button {
+  background-color: rgb(18, 118, 118);
+  color: black;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+.button:hover {
+  background-color: rgb(66, 179, 179);
+}

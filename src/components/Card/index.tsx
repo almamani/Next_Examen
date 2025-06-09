@@ -1,14 +1,19 @@
+import Link from "next/link";
 import Image from "next/image";
 import { IMateria } from "@/interfaces/IMateria";
 
 const Card = ({ materia }: { materia: IMateria }) => {
   return (
-    <div className="m-6 p-4 bg-white">
-      <Image src={materia.image} width={280} height={280} />
-      <h3>{materia.name}</h3>
-      <p>{materia.dia}</p>
-      <p>{materia.profesor}</p>
-    </div>
+    <Link href={`materias/${materia.id}`}>
+      <div className="m-6 p-4 bg-white">
+        <Image src={materia.image} width={280} height={280} />
+        <div className="text-center">
+          <h3 className="text-3xl">{materia.name}</h3>
+          <p>{materia.dia}</p>
+          <p>{materia.profesor}</p>
+        </div>
+      </div>
+    </Link>
   );
 };
 
