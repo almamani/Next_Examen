@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import NavBar from "@/components/NavBar/index";
 import Footer from "@/components/Footer/index";
+import UserProvider from "@/context/userContext";
 
 import "./globals.css";
 
@@ -18,12 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className}>
-      <body className="container">
-        <NavBar />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <UserProvider>
+      <html lang="en" className={inter.className}>
+        <body className="container">
+          <NavBar />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </UserProvider>
   );
 }
