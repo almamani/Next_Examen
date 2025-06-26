@@ -1,15 +1,21 @@
 "use client";
 import Image from "next/image";
+import { useContext } from "react";
+import { UserContext } from "@/context/userContext";
+import { useRouter } from "../../../node_modules/next/navigation";
 import { IMateria } from "@/interfaces/IMateria";
-import { useState } from "react";
 
 const Detail = ({ materia }: { materia: IMateria }) => {
-  const [user, setUser] = useState(null);
+  const { user } = useContext(UserContext);
+  const router = useRouter();
 
   const handleInscripcion = () => {
-    user
-      ? alert("Ya podes Inscribirte")
-      : alert("No podes Inscribirte, Logueate primero");
+    if (user) {
+      alert("Puede continuar el proceso de inscripcion");
+    } else {
+      alert("Antes de inscribirse deberá loguearse");
+      router.push("/login");
+    }
   };
 
   return (
