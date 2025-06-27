@@ -9,7 +9,9 @@ const Card = ({ materia }: { materia: IMateria }) => {
         <Image src={materia.image} width={280} height={280} />
         <div className="text-center">
           <h3 className="text-3xl">{materia.name}</h3>
-          <p className="text-xl">{materia.dia}</p>
+          <p className="text-xl">
+            {materia.dia} - {materia.hora}
+          </p>
           <p className="text-xl">{materia.profesor}</p>
         </div>
       </div>
